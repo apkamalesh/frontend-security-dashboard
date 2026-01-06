@@ -1,0 +1,59 @@
+/* MAIN WRAPPER */
+.main-layout {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  overflow-y: auto;
+  z-index: 9999;
+}
+
+/* Sidebar Menu */
+.sidebar ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.sidebar ul li{
+  padding:12px 20px;
+  margin:8px 0;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active{
+  background:#1a3c63;
+}
+
+/* DIVIDER */
+.divider{
+  width:80%;
+  height:1px;
+  background:#3f4f6b;
+  margin:15px auto;
+}
+
+/* RIGHT CONTENT AREA  🔥 IMPORTANT */
+.content-area{
+  margin-left:260px;
+  width: calc(100% - 260px);
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background:black;
+  padding: 0;
+  box-sizing: border-box;
+}

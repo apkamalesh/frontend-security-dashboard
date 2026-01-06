@@ -1,0 +1,118 @@
+/* ================= MAIN WRAPPER ================= */
+.dash-wrapper {
+  color: white;
+  padding: 25px;
+  min-height: 100vh;
+  background: black;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* ================= TOP STATS ================= */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.stat-box {
+  padding: 18px;
+  border-radius: 14px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.stat-box p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.stat-box h2 {
+  margin-top: 8px;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.green { background: #1fa84a; }
+.red { background: #c62828; }
+.blue { background: #2196f3; }
+.orange { background: #f39c12; }
+
+/* ================= MIDDLE SECTION ================= */
+.middle-section {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 22px;
+}
+
+.chart-box,
+.alert-box {
+  background: #0b213f;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: inset 0 0 25px rgba(0,0,0,0.8);
+}
+
+.chart-box h3,
+.alert-box h3 {
+  margin: 0 0 10px 0;
+}
+
+/* ===== Real Time Chart Height Control ===== */
+.chart-box {
+  height: 320px;
+}
+
+.chart-box canvas {
+  height: 240px !important;
+}
+
+/* ================= ALERTS ================= */
+.alert-box ul {
+  margin-top: 10px;
+}
+
+.alert-box li {
+  margin: 10px 0;
+}
+
+/* ================= BOTTOM ROW ================= */
+.bottom-row {
+  display: flex !important;
+  gap: 20px !important;
+  margin-top: 25px !important;
+  width: 100% !important;
+}
+
+/* ===== Bottom Panels ===== */
+.panel {
+  background: #061933 !important;
+  border-radius: 18px !important;
+  padding: 20px !important;
+  flex: 1 !important;
+  color: white !important;
+  min-height: 300px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.panel canvas {
+  height: auto !important;
+}
+/* hide scrollbar but allow scroll */
+.dash-wrapper {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar (Chrome, Edge, Safari) */
+.dash-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar (Firefox) */
+.dash-wrapper {
+  scrollbar-width: none;
+}

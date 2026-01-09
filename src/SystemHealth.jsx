@@ -1,4 +1,4 @@
-import "./Systemhealth.css";
+import "./SystemHealth.css";
 
 export default function SystemHealth() {
 

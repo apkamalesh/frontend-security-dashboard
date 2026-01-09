@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "./dashboard.css";
+import "./Dashboard.css";
 
 import DailyActivityChart from "./DailyActivityChart";
 import TodaySegmentChart from "./TodaySegmentChart";

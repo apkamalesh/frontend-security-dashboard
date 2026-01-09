@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Dashboard from "./Dashboard";
-import ThreatLogs from "./Threatlogs";
+import ThreatLogs from "./ThreatLogs";
 import SystemHealth from "./SystemHealth";
 import SettingsPage from "./Settings";
 import "./MainLayout.css";

@@ -3,7 +3,7 @@ import Dashboard from "./Dashboard";
 import ThreatLogs from "./ThreatLogs";
 import SystemHealth from "./SystemHealth";
 import SettingsPage from "./Settings";
-import "./MainLayout.css";
+import "./Mainlayout.css";
 
 export default function MainLayout() {
 
